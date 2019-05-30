@@ -1,3 +1,5 @@
+This is the page where you'll be able to see all the contributions made to your articles that are awaiting your approval.
+
 `main/views.py`
 ```python
 def contributions_list(request):
