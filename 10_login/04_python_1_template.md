@@ -1,4 +1,4 @@
-`authentication/templates/register.html`
+`authentication/templates/login.html`
 
 ```html
 {% extends "base.html" %}

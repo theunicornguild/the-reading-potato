@@ -44,21 +44,23 @@ Now we need to decide where want to put this form. In my case, I want to add it 
 ```html
 ...
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="{% url 'articls-list' %}">The Reading Potato</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-        {% if request.user.is_authenticated %}
-            <a class="nav-link" href="{% url 'create-article' %}">Create</a>
-            <a class="nav-link" href="{% url 'my-articles-list' %}">My Articles</a>
-            <a class="nav-link" href="{% url 'logout' %}">Logout</a>
-        {% else %}
-            <a class="nav-link" href="{% url 'login' %}">Login</a>
-            <a class="nav-link" href="{% url 'register' %}">Register</a>
-        {% endif %}
-        </div>
+        <a class="navbar-brand" href="{% url 'articls-list' %}">The Reading Potato</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                {% if request.user.is_authenticated %}
+                    <a class="nav-link" href="{% url 'create-article' %}">Create</a>
+                    <a class="nav-link" href="{% url 'my-articles-list' %}">My Articles</a>
+                    <a class="nav-link" href="{% url 'contributions-list' %}">Contributions</a>
+                    <a class="nav-link" href="{% url 'my-contributions-list' %}">My Contributions</a>
+                    <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+                {% else %}
+                    <a class="nav-link" href="{% url 'login' %}">Login</a>
+                    <a class="nav-link" href="{% url 'register' %}">Register</a>
+                {% endif %}
+            </div>
 
         <form action="{% url 'articles-list' %}" class="form-inline" method="GET">
 			<input class="form-control" type="search" placeholder="Search" aria-label="Search" name="q">
@@ -118,7 +120,7 @@ If `query` exists, we use the `filter` QuerySet to filter the article objects us
 
 There are situations were we would like the search functionality to overlook the letter case. For case insensitive lookups we can use `icontains`, for example `title__icontains=query` will still return Pineapple if I searched for APPLE.
 
-Notice that double underscores( __ ) are used for [Field Lookups](https://docs.djangoproject.com/en/dev/topics/db/queries/#field-lookups), Which iterates through the dictionary created using python keyword arguments, these keyword arguments are QuerySet methods taking the general form of `field__lookuptype.`
+Notice that double underscores( \_\_ ) are used for [Field Lookups](https://docs.djangoproject.com/en/dev/topics/db/queries/#field-lookups), Which iterates through the dictionary created using python keyword arguments, these keyword arguments are QuerySet methods taking the general form of `field__lookuptype`.
 
 
 #### Extra Trick

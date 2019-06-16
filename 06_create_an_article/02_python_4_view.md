@@ -12,6 +12,7 @@ let's start with the `view`
 from .forms import ArticleForm
 from .models import Artcle
 ...
+
 def create_article(request):
 	form = ArticleForm()
 	if request.method == "POST":
@@ -66,7 +67,7 @@ what this does is it creates an `Article` object without saving it into the data
 ```python
 article = form.save(commit=False)
 ```
-Then we manually set the author as the person who made the request `request.user`. Finally, we save it to the database.
+Then we manually set the author as the person who made the request. We can get the logged in user from the `request` variable that is received as a parameter in every view. Finally, we save it to the database.
 ```python
 article.author = request.user
 article.save()

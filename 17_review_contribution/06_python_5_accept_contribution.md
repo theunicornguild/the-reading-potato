@@ -62,5 +62,5 @@ Now that the accepting functionality is done, you can add a button in the contri
 `main/templates/contribution_details.html`
 ```html
 ...
-<a href="{% url 'accept-changes' contribution.id %}"></a>
+<a href="{% url 'accept-changes' contribution.id %}">Accept</a>
 ```

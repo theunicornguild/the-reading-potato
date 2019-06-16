@@ -22,7 +22,7 @@ def contribute_to_article(request, article_id):
 			changed_article = form.save(commit=False)
 			contribution = Contribution.objects.create(user=request.user, article=article)
 			Change.objects.create(new_content=changed_article.content, contribution=contribution)
-			return redirect('contributions-list')
+			return redirect('my-contributions-list')
 
 	context = {"form":form, "article":article}
 	return render(request, 'contribute_to_article.html', context)
@@ -49,3 +49,6 @@ Change.objects.create(new_content=changed_article.content, contribution=contribu
 The change object was created by setting the new content and connecting it to the created contribution.
 
 Note that status of the contribution is `Pending` by default.
+
+
+

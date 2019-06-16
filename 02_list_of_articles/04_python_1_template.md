@@ -16,10 +16,14 @@ In django, when we specify a `template`'s name, it searches for it inside the `a
 ```
 
 I will repeat this again. all templates/html pages need to be inside a folder called `templates` in the app.
+
 **NOT** `template`
 **NOT** `Templates`
 **NOT** anything else
-it has to be called `templates`
+
+It has to be called `templates`. The reason behind that is django will look for the `html` files in the apps in a folder called `templates`. If you name it anything else, django will not be able to find them.
+
+
 
 Going back to `articles_list.html`, any html that we write in this page will be shown to the user as the response from the view. What we want the user to see is the list of articles. We sent the list of articles to the `template` through the context dictionary. So, we'll use that dictionary to show the information  in the html.
 
@@ -53,7 +57,8 @@ Obviously, we won't call each article in the list, usually with lists we use `fo
 ```
 
 let's take this step by step.
+
  1. An unordered list was created `<ul>`.
  2. Inside the list we looped through the articles, where the `articles` is the key used in the `context` dictionary sent by the `view`.
  3. For each `article` from our list of `articles`, we created a list item `<li>`.
- 4. Inside of the list item, we used the variable `article` variable to get the information inside it.
+ 4. Inside of the list item, we used the variable `article` to get the information inside it.

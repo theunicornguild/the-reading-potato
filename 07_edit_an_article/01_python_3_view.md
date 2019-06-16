@@ -15,7 +15,7 @@ def edit_article(request, article_id):
 
 	form = ArticleForm(instance=article)
 	if request.method == "POST":
-		form = ArticleForm(request.POST)
+		form = ArticleForm(request.POST, instance=article)
 
 		if form.is_valid():
 		    form.save()

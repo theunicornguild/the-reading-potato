@@ -4,7 +4,7 @@ To do this we need to know one thing. the url that takes to the details page. Th
 ```python
 path('articles/<int:article_id>/', views.article_details, name="article-details")
 ```
-Then in the template, we'll use the `url` tag which takes the name of the url and any parameters the url takes which in this case is `article_id`.
+Then in the template, we'll use the `url` tag which takes the name of the url and any parameters the url takes which in this case is `article_id`. The url tag then takes the url name and whatever parameters were passed and converts it to the `path`/`url` that has the received name.
 
 In `main/templates/articles_list.html`, we'll specify that when the title is clicked, take me to its details.
 ```html

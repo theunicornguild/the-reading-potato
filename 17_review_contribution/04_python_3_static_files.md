@@ -63,4 +63,4 @@ Let's see what that looks like:
     </head>
 ```
 
-We linked the css file using the in the `base.html` so that all pages will then have access to it.
+We linked the css file in the `base.html` so that all pages will have access to it.

@@ -8,7 +8,7 @@ Let's go over our views and figure out what permissions we want to give each `vi
  * `articles_list`: Anyone should be able to access it.
  * `article_details`: Anyone should be able to access it.
  * `create_article`: Only `authenticated` users should access it, since the logged in user is added as the author.
- * `my_articles_list`: Only `authenticated` users should access it, since only a logged user has articles.
+ * `my_articles_list`: Only `authenticated` users should access it, since only a logged in user has articles.
  * `register`: Only `anonymous` users can access it. it wouldn't make sense to let a logged in user register.
  * `login_view`: Only `anonymous` users can access it. because why would a logged in user want to login.
  * `logout_view`: Only `authenticated` users should access it. there is no need to explain this one.
@@ -26,7 +26,7 @@ Let's see how that's done
 ```python
 def create_article(request):
     if request.user.is_anonymous:
-    		return redirect('login')
+    	return redirect('login')
     		
     ...
 

@@ -19,7 +19,7 @@ Create a `forms.py` file in the `authentication` app
 from django import forms
 from django.contrib.auth.models import User
 
-...
+
 class UserRegister(forms.ModelForm):
     class Meta:
         model = User

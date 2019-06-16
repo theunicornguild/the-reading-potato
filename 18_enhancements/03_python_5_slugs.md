@@ -121,3 +121,30 @@ def generate_slug(instance, *args, **kwargs):
 ...
 
 ```
+
+Now that slugs are created, we need to start using them. So, instead of showing the id of an article in the url, we'll show the slug and instead of sending the id to get the article we'll send the slug.
+
+`main/templates/articles_list.html`
+```
+...
+    <a href="{% url 'article-details' article.slug %}">
+        <h1>{{article.title}}</h1>
+    </a>
+...
+```
+
+`main/views.py`
+```python
+def article_details(request, article_slug):
+    context = { "article" : Article.objects.get(slug=article_slug)}
+    return render(request, 'article_details.html', context)
+```
+
+`reading_potato/urls.py`
+```python
+...
+    path('articles/<article_slug>/', views.article_details, name="article-details"),
+...
+```
+
+Note: any view that is redirecting to the article details page will need to send the slug instead of the id.

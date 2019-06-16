@@ -35,8 +35,8 @@ urlpatterns = [
 ```
  
  just as we did for the accept, we need to add a button in the contribution details for the author to decline this contribution.
- `main/templates/contribution_details.html`
- ```html
+`main/templates/contribution_details.html`
+```html
 ...
-<a href="{% url 'decline-changes' contribution.id %}"></a>
+<a href="{% url 'decline-changes' contribution.id %}">Decline</a>
 ```

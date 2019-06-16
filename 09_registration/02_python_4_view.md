@@ -2,10 +2,10 @@ Since this `view` is for the registration, it has to be written in the `authenti
 
 `authentication/views.py`
 ```python
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import login
 
-from forms import UserRegister
+from .forms import UserRegister
 
 
 def register(request):

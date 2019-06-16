@@ -2,7 +2,7 @@
 ```shell
 (env) $ pip install django
 ```
-`Django` is installed, so now we can create our django project in our current director.
+`Django` is installed, so now we can create our django project in our current directory.
 ```shell
 (env) $ django-admin startproject reading_potato
 ```
@@ -47,6 +47,9 @@ Quit the server with CONTROL-C.
 ```
 Take the URL of the localhost `http://127.0.0.1:8000/` and checkout your website.
 Notice that there is a message saying something about unapplied migrations.Django comes with some preconfigured packages that deal with our database. Since we've just gotten these packages we have to apply changes to our database to accommodate for them. This is done by running the migrate command.
+
+However, before you can run any command in the terminal, you have to stop the server first. You can do by pressing the `C` key while holding down the `Ctrl` key.
+
 ```shell
 (env)$ python manage.py migrate
 Operations to perform:

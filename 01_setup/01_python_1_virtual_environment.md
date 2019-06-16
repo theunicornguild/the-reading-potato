@@ -16,7 +16,7 @@ To start creating our reading potato project we need to do a few steps:
 $ sudo apt-get install python3-pip
 ```
 
-   **windonws**:
+   **windows**:
 ```shell
 $ python get-pip.py
 ```

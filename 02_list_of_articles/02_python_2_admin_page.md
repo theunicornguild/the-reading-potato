@@ -27,7 +27,7 @@ And the answer is the `admin.py`.
 In `main/admin.py`:
 ```python
 from django.contrib import admin
-from main import Article
+from .models import Article
 
 admin.site.register(Article)
 ```
