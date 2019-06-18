@@ -30,7 +30,7 @@ $ python get-pip.py
 $ sudo apt-get install python3-pip
 ```
 
-
+___
 If you already have `pip`, you can use it to install `virtualenv` which is the tool used to create virtual environments.
 ```shell
 $ pip install virtualenv
