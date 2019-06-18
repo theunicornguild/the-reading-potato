@@ -17,9 +17,10 @@ $ sudo easy_install pip
 ```
 
    **windows**:
+   
  1. Download [get-pip.py](https://bootstrap.pypa.io/get-pip.py) to a folder on your computer.
- * Open a command prompt and navigate to the folder containing get-pip.py.
- * Run the following command:
+ 2. Open a command prompt and navigate to the folder containing get-pip.py.
+ 3. Run the following command:
 ```shell
 $ python get-pip.py
 ```
