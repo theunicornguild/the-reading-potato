@@ -13,12 +13,20 @@ To start creating our reading potato project we need to do a few steps:
    
    **mac**:
 ```shell
-$ sudo apt-get install python3-pip
+$ sudo easy_install pip
 ```
 
    **windows**:
+ 1. Download [get-pip.py](https://bootstrap.pypa.io/get-pip.py) to a folder on your computer.
+ * Open a command prompt and navigate to the folder containing get-pip.py.
+ * Run the following command:
 ```shell
 $ python get-pip.py
+```
+
+**Linux**:
+```shell
+$ sudo apt-get install python3-pip
 ```
 
 

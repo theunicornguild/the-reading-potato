@@ -147,4 +147,4 @@ def article_details(request, article_slug):
 ...
 ```
 
-Note: any view that is redirecting to the article details page will need to send the slug instead of the id.
+Note: any view that is redirecting to the article details page will need to send the slug instead of the id so change those accordingly.

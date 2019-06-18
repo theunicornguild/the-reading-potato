@@ -29,9 +29,9 @@ class Article(models.Model):
 So now, our model has these fields:
   * `title` : a character field which is basically a string
   * `content`: a string
-  * `created_on`: stores both date and time and the value is added automatically whenever a page object is created.
-  * `last_update`: stores both date and time and the value is added automatically whenever a page object is updated.
-  * `author`:  stores the `User` that created this `Page` object, where the `User` is a predefined model created by `Django`. and the `ForeignKey` relationship is a one-to-many which means each `Article` can only be connected to one `User` as the author while the `User` can be connected(be the author) to many `Article` objects.
+  * `created_on`: stores both date and time and the value is added automatically whenever an `Article` object is created.
+  * `last_update`: stores both date and time and the value is added automatically whenever an `Article` object is updated.
+  * `author`:  stores the `User` that created this `Article` object, where the `User` is a predefined model created by `Django`. and the `ForeignKey` relationship is a one-to-many which means each `Article` can only be connected to one `User` as the author while the `User` can be connected(be the author) to many `Article` objects.
 
 Every model that we create or any changes we make to a model aren't applied to the `database` immediately. For these changes to take place in our database we need to do what's called `migrations`. `migrations` are basically `django`'s way of converting what we write in the `models` to the actual database, by creating/deleting a table or adding or even renaming a field, and so on. 
 
