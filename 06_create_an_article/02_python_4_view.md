@@ -9,6 +9,8 @@ let's start with the `view`
 
 `main/views.py`
 ```python
+from django.shortcuts import render, redirect
+
 from .forms import ArticleForm
 from .models import Artcle
 ...
