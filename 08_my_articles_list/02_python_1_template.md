@@ -4,10 +4,12 @@
 
 {% block content %}
     {% for article in user.articles.all %}
-    	<a href="{% url 'article-details' article.id %}">{{article.title}}</a>
+    	<a href="{% url 'article-details' article.id %}">
+    		<h1>{{ article.title }}</h1>
+    	</a>
     	<hr>
     {% endfor %}
-{% endblock content%}
+{% endblock content %}
 ```
 
 we used the `user` which is the logged in user that made the request. Then, using the `related_name` option we can get the `articles` that are connected to this user through the `ForeignKey` relationship. Finally, we specified `all` to get all the articles that belong to this user.
