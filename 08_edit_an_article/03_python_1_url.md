@@ -13,3 +13,8 @@ You can add a button in the article details page to take us to the edit page lik
 ```html
 <a href="{% url 'edit-article' article.id %}">Edit</a>
 ```
+
+___
+## Trello
+> Move card `As a logged in user, I can edit my article's title and content` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
+___

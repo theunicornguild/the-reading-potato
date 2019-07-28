@@ -3,6 +3,13 @@ Now that the form is ready, we can start creating the page for creating an artic
  * `template`
  * `url`
 
+
+ ___
+## Trello
+> Move card `As a logged in user, I can add a new article` from the `Backlog` to the `Doing` list.
+___
+
+
 let's start with the `view`
 
 ###### view 

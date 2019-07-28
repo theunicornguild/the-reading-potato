@@ -25,3 +25,8 @@ In `main/templates/articles_list.html`, we'll specify that when the title is cli
     </ul>
 </body>
 ```
+
+___
+## Trello
+> Move card `As a user, I can see an articles details` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
+___

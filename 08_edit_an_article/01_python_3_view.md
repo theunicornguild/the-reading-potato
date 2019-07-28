@@ -1,3 +1,9 @@
+ ___
+## Trello
+> Move card `As a logged in user, I can edit my article's title and content` from the `Backlog` to the `Doing` list.
+___
+
+
 Now that users are able to create articles, they should also be able to edit them afterwards. Again, this will need a form. However, we need to decide on what the user is allowed to edit.
 
 can they edit the content?
