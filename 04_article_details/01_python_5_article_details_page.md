@@ -2,6 +2,12 @@ This page will have the articles details, basically all the information that we 
 
 So, if it's only one page, then we need one `view`, one `url`, and one `template`.
 
+___
+## Trello
+> Move card `As a user, I can see an articles details` from the `Backlog` to the `Doing` list.
+___
+
+
 Take some time to read the below code and try to make the connection between what's happening in the `view` ,`url` and `template`. The dancing potato is just under the code if you need to look at it while you think.
 
 `main/views.py`

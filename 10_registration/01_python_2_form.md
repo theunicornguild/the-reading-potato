@@ -1,5 +1,11 @@
 Users won't be registering through the `createsuperuser` command, nor will they login through the admin page. So, we need to start providing them with pages where they can register and login.
 
+ ___
+## Trello
+> Move card `As a user, I can register with a username, email, first and last name, and password` from the `Backlog` to the `Doing` list.
+___
+
+
 For a user to register, he needs to fill a form with his username, password, email and whatever you as the designer of the website see fit. In this website, I decided to ask for their username, first name, last name, email, and password for registration.
 
 So, we first need to create a form. It will be a `ModelForm` and the model will be a `User` since we're using this form to create a `User` object.

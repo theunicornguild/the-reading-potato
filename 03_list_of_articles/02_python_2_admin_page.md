@@ -33,4 +33,10 @@ admin.site.register(Article)
 ```
 
 what `admin.site.register(Article)` does is basically register the `Article` model to the admin site. So, if we go back to the admin site, we'll see the `Article` model under the `main` app.
+
 I now give you permission to go all crazy and add new articles, delete, change them, do whatever you want. you're a superuser, enjoy your privelages while they last.
+
+
+After you've used your privelages and added a few articles, you should see the list of articles that you have in your database. Now go back to your model and remove the `__str__` method and see your list of articles in the admin page.
+
+That is what I meant by saying the string representation of your model. So, basically you can make the `__str__` method return any string you want and that will be how your model is represented. 

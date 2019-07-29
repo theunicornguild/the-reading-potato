@@ -44,3 +44,5 @@ In the terminal:
 (env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 ```
+
+One last part might still be slightly vague, the `__str__` method in the model. This is basically the string representation of your model. This might not make much sense yet, but it will make more sense in the next part.

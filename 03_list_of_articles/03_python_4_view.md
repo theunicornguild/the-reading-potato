@@ -1,5 +1,10 @@
 Let's go back to what we were initially trying to do, which was creating a page where users can see a list of articles. 
 
+___
+## Trello
+> Move card `As a user, I can see the list of articles` from the `Backlog` to the `Doing` list.
+___
+
 Each page that we create needs to have three things:
  * a `url` that points to this page or in our case, it would point to a `view`.
  * a `view` that will receive the users request and returns a response.
