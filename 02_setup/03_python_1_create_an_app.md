@@ -7,7 +7,7 @@ A project can have several or just one app depending on how you want to organize
 * `main` : contains all the normal users functionalities.
 * `authentication`: contains all authentication related functionalities like login.
 
-we could've done everything in one app but it's nicer and cleaner to divide your code.
+We could've done everything in one app but it's nicer and cleaner to divide your code.
 Before creating an app make sure your virtual environment is activated and that you are in your project root folder; that's where you can see `manage.py`.
 We're using the `startapp` command to create an app and after it we specify the apps name:
 ```shell
@@ -63,4 +63,4 @@ INSTALLED_APPS = [
 		'authentication',
 	]
 ```
-the `INSTALLED_APPS` list holds the names of all Django applications that are activated in this Django instance. That is why we need to add our new apps so that your django project can recognize them.
+The `INSTALLED_APPS` list holds the names of all Django applications that are activated in this Django instance. That is why we need to add our new apps so that your django project can recognize them.

@@ -1,4 +1,4 @@
-When we add anything in any website, like adding a new address to your account or registering which is basically creating a new user, in all those cases we are filling a form. The form has several fields, some are required, some are optional, and at the end we press a button to submit this form which will lead to creating an object for whatever we we're filling the form for.
+When we add anything in any website, like adding a new address to your account or registering which is basically creating a new user, in all those cases we are filling a form. The form has several fields, some are required, some are optional, and at the end we press a button to submit this form which will lead to creating an object of whatever we we're filling the form for.
 
 Therefore, For us to create an article we need to create a form. This form will have fields for the user to fill out. If we took a step back and saw our `Article` model we'd know what fileds we have. 
 * `title`: the user should be able to write his own title.
@@ -38,7 +38,8 @@ class ArticleForm(forms.ModelForm):
 		fields = ['title', 'content']
 ```
 
-we're creating a form called `ArticleForm`. This form is connected to a model that's why it inherits from `ModelForm`. The model it's connected to is the `Article` model. From that model, we want the `title` and `content` fields to be added to the form.
+We're creating a form called `ArticleForm`. This form is connected to a model that's why it inherits from `ModelForm`. The model it's connected to is the `Article` model. From that model, we want the `title` and `content` fields to be added to the form.
 
 Take a minute, go back to the `Article` model and let everything sink in.
+
 ![sink](https://media.giphy.com/media/13PZ0dKw1J3LzO/giphy.gif)

@@ -14,7 +14,7 @@ def edit_article(request, article_id):
     return render(request, 'edit_article.html', context)
 ```
 
-What we did was we checked if the user that made the request is **not** the author of the retrieved article, then we redirected him to the artcles details page without giving him access to the edit page.
+What we did was we checked if the user that made the request is **not** the author of the retrieved article, then we redirected him to the articles details page without giving him access to the edit page.
 
 Next, let's make the button only visible to the author
 `main/templates/article_details.html`
@@ -25,3 +25,14 @@ Next, let's make the button only visible to the author
 {% endif %}
 ...
 ````
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added permissions"
+$ git push
+```
+___

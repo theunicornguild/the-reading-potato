@@ -59,9 +59,22 @@ Let's see how this is done.
 `{% load crispy_forms_tags %}` was used in the beginning of the file to load the template filter provided by crispy forms. Then we used the crispy template filter to make the form crispy (`{{form|crispy}}`).
 
 And just like that our form is styled
+
 ![mind blown](https://media.giphy.com/media/xT0xeJpnrWC4XWblEk/giphy.gif)
 
-___
+
 ## Trello
 > Move card `As a logged in user, I can add a new article` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
+___
+
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "finished creating an article functionality"
+$ git push
+```
 ___

@@ -9,7 +9,7 @@ To start creating our reading potato project we need to do a few steps:
 
    A virtual environment is basically a folder and when you activate it, it separates everything installed in your computer from your current project. If it still doesn't make sense, think of it like a room, every virtual environment you create in your computer is a seperate room. everything in your room stays in your room unlike an open area where things can get slightly chaotic.
    
-   Before we can actually create our virtual environment, we need to install it using `pip` which is a package manager for Python packages. if you dont already have `pip`, you can install it using the following command.
+   Before we can actually create our virtual environment, we need to install it using `pip` which is a package manager for Python packages. if you don't already have `pip`, you can install it using the following command.
    
    **mac**:
 ```shell
@@ -45,7 +45,7 @@ $ virtualenv --python=python3 env
 ```shell
 $ virtualenv env
 ```
-`virtualenv --python=python3 env`(in mac) or `virtualenv env`(in windows) will create a folder in the current directory which will contain the Python executable files(in this case, python3), and a copy of the pip library which you can use to install other packages. The name of the virtual environment (in this case, it was env) can be anything. However, this virtual environment will remain just a folder until we activate it. if the virtual environment is a room, you can think of activating it as closing the door. So, first we go into the virtual environment and then we activate it.
+`virtualenv --python=python3 env`(in mac) or `virtualenv env`(in windows) will create a folder in the current directory which will contain the Python executable files(in this case, python3), and a copy of the pip library which you can use to install other packages. The name of the virtual environment (in this case, it was env) can be anything. However, this virtual environment will remain just a folder until we activate it. If the virtual environment is a room, you can think of activating it as closing the door. So, first we go into the virtual environment and then we activate it.
 ```shell
 $ cd env
 $ source bin/activate

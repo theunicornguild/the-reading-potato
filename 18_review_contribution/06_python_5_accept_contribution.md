@@ -1,3 +1,7 @@
+## Trello
+> Move card `As a logged in user, I can approve or decline the changes made to my articless` from the `Backlog` to the `Doing` list.
+___
+
 Accepting a Contribution does not require a `template` since there is not a page to be seen after you accept a contribution. So, we will only be needing a `view` and a `url` to that `view`.
 
 What happens when the contribution is accepted?
@@ -7,7 +11,7 @@ What happens when the contribution is accepted?
 
 Let's see how that's done
 
-##### view
+#### view
 ```python
 def accept_changes(request, contribution_id):
 	contribution = Contribution.objects.get(id=contribution_id)
@@ -28,15 +32,15 @@ def accept_changes(request, contribution_id):
 	return redirect('contributions-list')
 ```
 
-we first retrieved the contribution and did the necessary permisiions.
+We first retrieved the contribution and did the necessary permissions.
 
-Then, the status of the contributio was changed to `Accepted`. notice that we had to save the contribution afterwards. because the changes made to the contribution in the `view` are only reflected to this variable but not saved to the database. the `save()` method is what saves the changes made to the database.
+Then, the status of the contribution was changed to `Accepted`. Notice that we had to save the contribution afterwards. because the changes made to the contribution in the `view` are only reflected to this variable but not saved to the database. the `save()` method is what saves the changes made to the database.
 ```python
 	contribution.status = Contribution.ACCEPTED
 	contribution.save()
 ```
 
-After that we change the articles content to the new content
+After that we change the article's content to the new content
 ```python
 	article = contribution.article
 	article.content = contribution.change.new_content
@@ -48,7 +52,7 @@ Finally, we delete the change related to this contribution
 	contribution.change.delete()
 ```
 
-###### url
+#### url
 `reading-potato/urls.py`
 ```python
 ...

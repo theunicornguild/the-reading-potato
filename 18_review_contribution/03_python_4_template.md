@@ -1,6 +1,6 @@
 The sent comparison result is now a list of strings, each string will either begin with `-`, `+`, ` `, or `?`. Here's what we want to do.
 If the string begins with:
- * `+`: this means this is a new line added from the new_content. So, we'll highlight it with green.
+ * `+`: this means this is a new line added from the new_content. So, we'll highlights it with green.
  * `-`: this means this is a line that was in the current content but not in the new one. So, we'll highlight it with red.
  * ` `: this line exists in both contents. we'll leave it as it is.
  * `?`: lines starting with `?` will be ignored.
@@ -53,5 +53,5 @@ If the first character is not `?`, we'll go to these lines. This checks whether 
 		{{line}}</p>
 ```
 
-t
+
 The `green-background` and `red-background` are classes that I have written in a custom css file which we'll setup in the next part.

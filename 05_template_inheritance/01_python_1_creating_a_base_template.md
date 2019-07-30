@@ -42,3 +42,15 @@ These lines can be deleted from all the `templates` and inherit them from `base.
 You can have as many blocks as you want in the base file and all you have to do in the templates is extend the base file and fill those blocks.
 
 Take the time to extend the base file in all our templates and remove all the redundant code. Now, if you write anything in the `base.html` template, it will appear in all the pages that extend it.
+
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added a base file for all pages"
+$ git push
+```
+___

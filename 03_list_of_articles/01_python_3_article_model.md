@@ -1,9 +1,9 @@
 This is the page where all our reading potatoes will browse through the available articles to read from.
 
 But the question is where are we getting those articles from?
-We need to store them somewhere to be able to retrieve them whenever a user requests this page. this storage is the `database` where we can save all our data from users that register in our website to these articles. `Django` provides us with a local database. All we have to do is set the structure of the tables/objects that we're saving there.
+We need to store them somewhere to be able to retrieve them whenever a user requests this page. This storage is the `database` where we can save all our data from users that register in our website to these articles. `Django` provides us with a local database. All we have to do is set the structure of the tables/objects that we're saving there.
 
-what's great about `django` is that it provides a simple way to structure our database and access it through the `models`. 
+What's great about `django` is that it provides a simple way to structure our database and access it through the `models`. 
 
 A `model` essentially creates the structure or maps to a table in your database. It sets the essential fields and the behavior of the information that you want to store.
 
@@ -31,7 +31,7 @@ So now, our model has these fields:
   * `content`: a string
   * `created_on`: stores both date and time and the value is added automatically whenever an `Article` object is created.
   * `last_update`: stores both date and time and the value is added automatically whenever an `Article` object is updated.
-  * `author`:  stores the `User` that created this `Article` object, where the `User` is a predefined model created by `Django`. and the `ForeignKey` relationship is a one-to-many which means each `Article` can only be connected to one `User` as the author while the `User` can be connected(be the author) to many `Article` objects.
+  * `author`:  stores the `User` that created this `Article` object, where the `User` is a predefined model created by `Django`, and the `ForeignKey` relationship is a one-to-many which means each `Article` can only be connected to one `User` as the author while the `User` can be connected(be the author) to many `Article` objects.
 
 Every model that we create or any changes we make to a model aren't applied to the `database` immediately. For these changes to take place in our database we need to do what's called `migrations`. `migrations` are basically `django`'s way of converting what we write in the `models` to the actual database, by creating/deleting a table or adding or even renaming a field, and so on. 
 
@@ -46,3 +46,16 @@ In the terminal:
 ```
 
 One last part might still be slightly vague, the `__str__` method in the model. This is basically the string representation of your model. This might not make much sense yet, but it will make more sense in the next part.
+
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added Article model"
+$ git push
+```
+___
+

@@ -6,7 +6,7 @@ The author wants to make a decision in this page about whether they want the new
 
 That means the author will be seeing both the new content and the current content.
 
-If the article is a 100 lines long, and the contribution is only one small change in line 43. We need a way to let the author know where changes are made without him having to read through the new and current content seperately and tries to find the difference.
+If the article is a 100 lines long, and the contribution is only one small change in line 43. We need a way to let the author know where changes are made without him having to read through the new and current content seperately and trying to find the difference.
 
 Thankfully python provides this library [`difflib`](https://docs.python.org/3/library/difflib.html) which helps in comparing two sequences or in our case two strings. 
 
@@ -40,11 +40,13 @@ Next we used the above instance to compare between the two strings. However we n
 comparison = d.compare(string1.splitlines(), string2.splitlines())
 ```
 
-Finally, to get the comparison in a format that easy to handle by the `template`, we'll turn it into a list of lines and printing it for the sake of the example.
+Finally, to get the comparison in a format that easy to handle by the `template`, we'll turn it into a list of lines and print it for the sake of the example.
 ```python
 print(list(comparison))
 ```
 
 Take the above code and run it, change the two strings as you want just so you can see how the library is working.
+
 ![still here](https://media.giphy.com/media/Wwfto5K9ixU9xzf5lK/giphy.gif)
+
 Go try the code and then come back

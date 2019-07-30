@@ -43,7 +43,7 @@ What happens to the contribution when it's accepted or declined?
 If a contribution is accepted, then the new content should replace the content of the article.
 If a contribution is declined, nothing happens other than that the status changed.
 
-In both cases, we'll have different versions of the `content` of the same article saved in each contrbution. However, we can't delete the contribution object because a user would like to know where they contributed and the whether their contribution was accepted or not. but saving the contents of each contribution is unnecessary unless we wanted to have all the previous versions.
+In both cases, we'll have different versions of the `content` of the same article saved in each contrbution. However, we can't delete the contribution object because a user would like to know where they contributed and whether their contribution was accepted or not. but saving the contents of each contribution is unnecessary unless we wanted to have all the previous versions.
 
 What I wanted to do was be able to delete the `content` of all the contributions after it's accepted or declined. To do that, I seperated it into a new model.
 
@@ -77,10 +77,21 @@ class Change(models.Model):
 
 The `new_content` was removed from the `Contribution` model and added to the new model `Change`. the `Change` model is connected to the `Contribution` model through a one to one relationship. So, each contribution has one change and vice versa. However, in this case we can delete the new content after the status of the contribution changes.
 
-**Important**: Whenever you add/delete a model or modify a model in any way for example renaming or adding new fields, you need to `makemigrations` and `migrate`. By doing this you inform your database of these new changes so that it modify its tables accordingly.
+**Important**: Whenever you add/delete a model or modify a model in any way for example renaming or adding new fields, you need to `makemigrations` and `migrate`. By doing this you inform your database of these new changes so that it modifies its tables accordingly.
 
 Make sure you virtual environment is activated and that you're in your project directory and start migrating
 ```
 (env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 ```
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added the Contribution and Change models"
+$ git push
+```
+___

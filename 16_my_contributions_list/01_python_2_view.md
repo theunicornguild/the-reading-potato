@@ -1,5 +1,9 @@
 This is the page where the user can see all the contributions he made to check their status whether accepted, declined, or still pending.
 
+## Trello
+> Move card `As a logged in user, i can see the status of the changes/contributions that I made to any article` from the `Backlog` to the `Doing` list.
+___
+
 Let's take a look at how the view is made
 `main/views.py`
 ```python
@@ -15,7 +19,8 @@ We didn't retrieve the contributions from the database.
 We didn't send anything through the context dictionay.
 
 Then how would we display them in the template?
-*thinkung time*
+
+*thinking time*
 
 ![dancing potato](https://media1.tenor.com/images/61497871ab091f01703a3f1a624fb3c4/tenor.gif?itemid=11684043)
 

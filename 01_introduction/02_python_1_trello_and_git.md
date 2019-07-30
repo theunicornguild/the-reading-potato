@@ -15,8 +15,11 @@ Open the projects `Trello` board which you'll find in the `Resources` section. I
 
 Right now all the cards are in the `backlog` list because we haven't started working on the project. So, as we start working in this project, we'll be moving the cards to different lists.
 
-
 ___
 
 #### Git
+
+We'll be using git throughout the project to keep track of the changes we're making to the code and create checkpoints everytime we finish a functionality.
+
+Since this project will be made from scratch, you will need to create a new git repo in [github](https://github.com/) and you'll push your project there.
 

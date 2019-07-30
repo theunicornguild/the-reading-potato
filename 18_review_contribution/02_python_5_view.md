@@ -1,3 +1,7 @@
+## Trello
+> Move card `As a logged in user, I can review changes/contributions made to my articles` from the `Backlog` to the `Doing` list.
+___
+
 `main/views.py`
 ```python
 ...
@@ -20,6 +24,6 @@ def contribution_details(request, contribution_id):
 	return render(request, 'contribution_details.html', context)
 ```
 
-There is nothing special in this `view` , we just retrieved the contribution, did the permissions, and then compared the two strings and sent the result through the context dictionary. 
+There is nothing special in this `view` , we just retrieved the contribution, added the permissions, and then compared the two strings and sent the result through the context dictionary. 
 
-The actual work will be in the template, because we just sent a list of strings through the `context` dictionary. Now, it's the templates job to show them in a presentable way for the user to be able to know the differences between the current and new content.
+The actual work will be in the template, because we just sent a list of strings through the `context` dictionary. Now, it's the template's job to show them in a presentable way for the user to be able to know the differences between the current and new content.

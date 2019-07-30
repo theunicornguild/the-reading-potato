@@ -40,7 +40,7 @@ def create_slug(instance, new_slug=None):
         return create_slug(instance, new_slug=new_slug)
     return slug
 ```
-This function takes an article object (`instance`) and slugify its title. So, if the title was `The Art of Potatoes`, the slug would be `the-art-of-potatoes`.
+This function takes an article object (`instance`) and slugifies its title. So, if the title was `The Art of Potatoes`, the slug would be `the-art-of-potatoes`.
 ```python
 slug = slugify(instance.title)
 ```
@@ -148,3 +148,14 @@ def article_details(request, article_slug):
 ```
 
 Note: any view that is redirecting to the article details page will need to send the slug instead of the id so change those accordingly.
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added slugs"
+$ git push
+```
+___

@@ -30,3 +30,15 @@ Let's see how that's done.
 ```
 
 After setting up bootstrap, you can now start styling your templates. However, keep in mind that bootstrap is set up in the `base.html` only. Therefore, only templates that are inheriting the `base.html` template have bootstrap.
+
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "designed all pages"
+$ git push
+```
+___

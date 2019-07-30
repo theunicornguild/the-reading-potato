@@ -26,6 +26,7 @@ Let's explain what these files are:
 * `urls.py` is the URL declarations for this Django project; a “table of contents” of your Django-powered site.
 * `wsgi.py` is a file that allows your project to be deployed.
 
+
 Before we go to the next step, let's try and run the project.
 first we'll get into our project's directory. Then we'll use the `runserver` command from `manage.py` to run our server.
 ```shell
@@ -81,3 +82,42 @@ Django version 2.0, using settings 'reading_potato.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
+
+### Git
+
+**Make sure that you do all the following steps while you're in you project directory (where `manage.py` is)**
+
+Now that we created the project, we'll initialize it as a git repo.
+
+```shell
+$ git init
+```
+
+Next you'll need to add a `gitignore` file that has the name of the files that might exist in a django project that usually should not be pushed to the remote git repo. So everytime we push to the remote repo, these files will be ignored.
+
+##### Mac
+```shell
+$ nano .gitignore
+```
+
+##### Windows
+```shell
+$ notepad .gitignore
+```
+
+A text editor will open up, just copy everything [here](https://github.com/jpadilla/django-project-template/blob/master/.gitignore) into the text editor and save it.
+
+Next, you need to connect your local repo to the remote one you created in the introduction chapter.
+
+```shell
+$ git remote add origin https://github.com/lailalelouch/n.git
+```
+
+Finally, push your project
+```shell
+$ git add .
+$ git commit -m "new project"
+$ git push -u origin master
+```
+
+___
