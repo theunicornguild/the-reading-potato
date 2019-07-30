@@ -26,6 +26,7 @@ Let's explain what these files are:
 * `urls.py` is the URL declarations for this Django project; a “table of contents” of your Django-powered site.
 * `wsgi.py` is a file that allows your project to be deployed.
 
+
 Before we go to the next step, let's try and run the project.
 first we'll get into our project's directory. Then we'll use the `runserver` command from `manage.py` to run our server.
 ```shell
@@ -81,3 +82,15 @@ Django version 2.0, using settings 'reading_potato.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CONTROL-C.
 ```
+
+### Git
+
+Now that we created the project, we'll initialize it as a git repo and push it to the remote repo you created in the introduction.
+
+```shell
+$ git init
+$ git add .
+$ git commit -m "new project"
+$ git push
+```
+___

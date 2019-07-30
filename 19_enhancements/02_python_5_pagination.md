@@ -1,4 +1,4 @@
-As the number of articles increase in our website, we need a better way to view them. Rather than having all the articles show up at once and the user would have to scroll down forever, it's better if separate them into pages. Just like when you google something, not all resukts are shown in one page, you'd have to click next to see the results of the 2nd page and so on. 
+As the number of articles increases in our website, we need a better way to view them. Rather than having all the articles show up at once and the user would have to scroll down forever, it's better if separate them into pages. Just like when you google something, not all results are shown in one page, you'd have to click next to see the results of the 2nd page and so on. 
 
 This is called `pagination`. So, we'll apply `pagination` to the articles list page.
 
@@ -83,7 +83,7 @@ You're seeing something a little new here when we're dealing with the scenarios,
              {{ articles.number }} of {{ articles.paginator.num_pages }}
         </span>
 
-        {% if pages.has_next %}
+        {% if articles.has_next %}
             <a href="?page={{ articles.next_page_number }}">></a>
         {% endif %}
     </span>
@@ -94,8 +94,8 @@ You're seeing something a little new here when we're dealing with the scenarios,
 
 We basically added this `pagination` `div` at the bottom of our code. This block of code does a couple of things:
 
-1. Checks if there's a next page, if so it provide's you a link to it.
-2. Checks if there's a previous page, if so it provide's you a link to it.
+1. Checks if there's a next page, if so it provides you a link to it.
+2. Checks if there's a previous page, if so it provides you a link to it.
 3. Displays which page you're on and how many pages there are in total.
 
 Go and test it now on your browser.

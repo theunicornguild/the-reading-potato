@@ -24,7 +24,7 @@ def register(request):
 	return render(request, 'register.html', context)
 ```
 
-All the steps are almost identical to the `article_create` view. The difference is the password. Django does not allow us to save the password as plain text, we need to hash it first which can be considered as a form of encryption to secure the password. So, we won't save the user to the database yet.
+All the steps are almost identical to the `article_create` view. The difference is the password. Django does not allow us to save the password as plain text, we need to hashes it first which can be considered as a form of encryption to secure the password. So, we won't save the user to the database yet.
 ```python
 user = form.save(commit=False)
 ```

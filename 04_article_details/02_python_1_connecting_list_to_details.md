@@ -1,6 +1,6 @@
 Now that we have two different pages (the list and details), let's try and connect them. So, if you click on an article in the list, it should take you to the details of this article. 
 
-To do this we need to know one thing. the url that takes to the details page. This is how it's defined in the `urls.py`.
+To do this we need to know one thing. the url that takes to the details page. This is how it's defined in `urls.py`.
 ```python
 path('articles/<int:article_id>/', views.article_details, name="article-details")
 ```
@@ -29,4 +29,15 @@ In `main/templates/articles_list.html`, we'll specify that when the title is cli
 ___
 ## Trello
 > Move card `As a user, I can see an articles details` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
+___
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "finished article details functionality"
+$ git push
+```
 ___

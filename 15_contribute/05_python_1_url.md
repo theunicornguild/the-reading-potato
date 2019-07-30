@@ -7,7 +7,7 @@ urlpatterns = [
 ]
 ```
 
-To access this page we can add a button in the articles detail that leads to this page.
+To access this page we can add a button in the article's detail that leads to this page.
 `main/templates/article_details.html`
 ```html
 ...

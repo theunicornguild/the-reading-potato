@@ -1,6 +1,6 @@
 Users won't be registering through the `createsuperuser` command, nor will they login through the admin page. So, we need to start providing them with pages where they can register and login.
 
- ___
+
 ## Trello
 > Move card `As a user, I can register with a username, email, first and last name, and password` from the `Backlog` to the `Doing` list.
 ___
@@ -14,7 +14,8 @@ However, before we start writing anything, let's go back to when we first create
 
 Do keep in mind that we could've written everything inside the `main` app, there's nothing wrong with that. But, separating things into apps just makes the code cleaner and easier to maintain.
 
-So, Let's go the `authentication` app for the first time.
+So, Let's go to the `authentication` app for the first time.
+
 ![open](https://media.giphy.com/media/eXg8Ij7JgnyDu/giphy.gif)
 
 

@@ -1,4 +1,3 @@
- ___
 ## Trello
 > Move card `As a logged in user, I can edit my article's title and content` from the `Backlog` to the `Doing` list.
 ___
@@ -6,14 +5,15 @@ ___
 
 Now that users are able to create articles, they should also be able to edit them afterwards. Again, this will need a form. However, we need to decide on what the user is allowed to edit.
 
-can they edit the content?
-can they change the title or is it set?
+Can they edit the content?
+
+Can they change the title or is it set?
 
 So, depending on the decisions that we make, we create the form. 
 
 I've decided to let the user edit both the title and content. That means the form  will have both `title` and `content` in its fields. We've already created such a form (`ArticleForm`) so we'll use that.
 
-###### view
+##### view
 
 ```python
 def edit_article(request, article_id):
@@ -33,7 +33,7 @@ def edit_article(request, article_id):
 
 This is very similar to creating an article. The only difference is that this article already exists and we're only updating it. So, we first need to retrieve it from the database.
 
-Then, we need to fill the form with articles data. Because, when the user opens the edit page, they don't want to see an empty form. They want the form with the title and content and then they could erase or change whatever they want. 
+Then, we need to fill the form with article's data. Because, when the user opens the edit page, they don't want to see an empty form. They want the form with the title and content and then they could erase or change whatever they want. 
 
 That is how the form was filled
 ```python
@@ -44,6 +44,6 @@ Do note that this time we saved the article to the database directly because the
 ```python
 form.save()
 ```
-We've also has to send the article in the context to be used in the `template` when the form is submitted.
+We've also sent the article in the context to be used in the `template` when the form is submitted.
 
 After that everything else is just like the create.

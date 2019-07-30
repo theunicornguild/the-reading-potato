@@ -40,7 +40,7 @@ def create_slug(instance, new_slug=None):
         return create_slug(instance, new_slug=new_slug)
     return slug
 ```
-This function takes an article object (`instance`) and slugify its title. So, if the title was `The Art of Potatoes`, the slug would be `the-art-of-potatoes`.
+This function takes an article object (`instance`) and slugifies its title. So, if the title was `The Art of Potatoes`, the slug would be `the-art-of-potatoes`.
 ```python
 slug = slugify(instance.title)
 ```

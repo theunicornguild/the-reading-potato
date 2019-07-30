@@ -11,7 +11,7 @@ def contributions_list(request):
 	return render(request, 'contributions_list.html', context)
 ```
 
-This `view` starts by checking permissions, and then retrieved the contributions and sends them threough the context to the `template`.
+This `view` starts by checking permissions, and then retrievs the contributions and sends them through the context to the `template`.
 
 Let's take a look at how the `Contributions` where filtered out
 ```python
@@ -19,4 +19,4 @@ contributions = Contribution.objects.filter(status=Contribution.PENDING, article
 ```
 First, we've got the `status` which should equal `Pending`, the variable `PENDING` in the `Contribution` model was used (go back to the model and take a look). This was done instead of actually writing `status = "Pending"` was just to make sure no human errors such as misspelling `Pending`.
 
-Next, we were able to filter according to the `author` of the `article` (where `article` is a field in the `Contribution` model) by using `__`(double underscore) which allows us to get the value of one of the articles fields.
+Next, we were able to filter according to the `author` of the `article` (where `article` is a field in the `Contribution` model) by using `__`(double underscore) which allows us to get the value of one of the article's fields.

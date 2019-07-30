@@ -1,4 +1,4 @@
- ___
+
 ## Trello
 > Move card `As a logged in user, I can logout` from the `Backlog` to the `Doing` list.
 ___
@@ -8,7 +8,7 @@ We can register and login, But we still can't logout. For each functionality, we
 
 The `view` was for doing the actual action like the login in, creating the user for registrarion or retrieving data from the database. 
 
-The `url` was to make a request which leads to accessing this `view`.
+The `url` was to make a request which leads to accessing the `view`.
 
 Finally, the `template` displayed the information we wanted the user to see.
 
@@ -20,7 +20,7 @@ We need the `view` to make the actual action of clearing the user from the sessi
 We need the `url` to make a request and access this view.
 But, we don't really need a `template`, because logging out does not need a page to be displayed for the user. It will only be a button that can be in any page. This button triggers the logging out action and that's it. There isn't something to be seen.
 
-##### view
+#### view
 Let's start with the `view`. This view might seem confusing at first but if you give it enough time and let it sink in, it will start making sense.
 
 `authentication/views.py`
@@ -40,7 +40,7 @@ This view uses the `logout` function which takes the request and deletes the ses
 
 Then the user is redirected to the `articles-list` page.
 
-##### url
+#### url
 `reading_potato/urls.py`
 ```python
 ...
@@ -52,5 +52,19 @@ urlpatterns = [
 
 ___
 ## Trello
+
+Now how cool is that, you moved the card from `doing` to `done` in just one page
+
 > Move card `As a logged in user, I can logout` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
+___
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "finished logout functionality"
+$ git push
+```
 ___

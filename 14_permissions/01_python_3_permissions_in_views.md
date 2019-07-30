@@ -51,6 +51,7 @@ def login_view(request):
 In this case if a logged in user is accessing this view, they'll be redirected to the `articles-list` page.
 
 Before adding permissions to the `templates`, it's your task to secure the rest of the views. Enjoy.
+
 ![dancing potato](https://media1.tenor.com/images/61497871ab091f01703a3f1a624fb3c4/tenor.gif?itemid=11684043)
 
 After that dance you should be done with the views. So, we'll move on to the `templates`.

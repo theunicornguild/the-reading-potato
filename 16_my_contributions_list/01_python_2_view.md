@@ -15,7 +15,8 @@ We didn't retrieve the contributions from the database.
 We didn't send anything through the context dictionay.
 
 Then how would we display them in the template?
-*thinkung time*
+
+*thinking time*
 
 ![dancing potato](https://media1.tenor.com/images/61497871ab091f01703a3f1a624fb3c4/tenor.gif?itemid=11684043)
 
