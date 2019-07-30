@@ -63,4 +63,4 @@ INSTALLED_APPS = [
 		'authentication',
 	]
 ```
-the `INSTALLED_APPS` list holds the names of all Django applications that are activated in this Django instance. That is why we need to add our new apps so that your django project can recognize them.
+The `INSTALLED_APPS` list holds the names of all Django applications that are activated in this Django instance. That is why we need to add our new apps so that your django project can recognize them.

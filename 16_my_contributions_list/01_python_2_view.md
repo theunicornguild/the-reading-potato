@@ -1,5 +1,9 @@
 This is the page where the user can see all the contributions he made to check their status whether accepted, declined, or still pending.
 
+## Trello
+> Move card `As a logged in user, i can see the status of the changes/contributions that I made to any article` from the `Backlog` to the `Doing` list.
+___
+
 Let's take a look at how the view is made
 `main/views.py`
 ```python

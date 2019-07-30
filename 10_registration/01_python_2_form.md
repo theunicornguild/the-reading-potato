@@ -16,6 +16,7 @@ Do keep in mind that we could've written everything inside the `main` app, there
 
 So, Let's go to the `authentication` app for the first time.
 
+
 ![open](https://media.giphy.com/media/eXg8Ij7JgnyDu/giphy.gif)
 
 

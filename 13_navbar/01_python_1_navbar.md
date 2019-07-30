@@ -64,6 +64,7 @@ We need to make a few changes the `navbar` to make it relevant to our website. W
 
 It's up to you to decide what you want to be shown on the navbar.
 
+
 ### Git
 
 Create a new checkpoint

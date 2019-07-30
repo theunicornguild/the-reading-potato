@@ -46,7 +46,7 @@ Let's create a `static` folder inside the app `main`. inside the `static` folder
 }
 ```
 
-note: If you want to add any static pictures such as a logo, it would also have to be saved in the `static` folder.
+Note: If you want to add any static pictures such as a logo, it would also have to be saved in the `static` folder.
 
 How would we actually use anything from our static folder? Well, in any HTML file you'd like to call static content into, you first have to load static then you can refer to any static file using the static tag.
 

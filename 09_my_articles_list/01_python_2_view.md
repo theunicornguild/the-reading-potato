@@ -1,6 +1,6 @@
 Now that users are able to create their own articles, it would make sense to provide them with a page where they can view only the articles that they created. 
 
- ___
+
 ## Trello
 > Move card `As a logged in user, I can see a list of my articles` from the `Backlog` to the `Doing` list.
 ___

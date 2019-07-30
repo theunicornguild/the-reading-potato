@@ -1,5 +1,10 @@
 This is the page where you'll be able to see all the contributions made to your articles that are awaiting your approval.
 
+## Trello
+> Move card `As a logged in user, I can see a list of my articles that people contributed in and need my review` from the `Backlog` to the `Doing` list.
+___
+
+
 `main/views.py`
 ```python
 def contributions_list(request):

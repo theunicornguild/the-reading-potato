@@ -32,7 +32,7 @@ from .models import Article
 admin.site.register(Article)
 ```
 
-what `admin.site.register(Article)` does is basically register the `Article` model to the admin site. So, if we go back to the admin site, we'll see the `Article` model under the `main` app.
+What `admin.site.register(Article)` does is basically register the `Article` model to the admin site. So, if we go back to the admin site, we'll see the `Article` model under the `main` app.
 
 I now give you permission to go all crazy and add new articles, delete, change them, do whatever you want. you're a superuser, enjoy your privelages while they last.
 

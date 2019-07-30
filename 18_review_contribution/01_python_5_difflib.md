@@ -46,5 +46,7 @@ print(list(comparison))
 ```
 
 Take the above code and run it, change the two strings as you want just so you can see how the library is working.
+
 ![still here](https://media.giphy.com/media/Wwfto5K9ixU9xzf5lK/giphy.gif)
+
 Go try the code and then come back
