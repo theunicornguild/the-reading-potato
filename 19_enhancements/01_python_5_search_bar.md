@@ -1,5 +1,9 @@
 To provide users with a better user experience, we can add a search bar to find a specific article that they're looking for.
 
+## Trello
+> Move card `As a user, I can search through the list of articles` from the `Backlog` to the `Doing` list.
+___
+
 This is how a search bar looks like
 ```html
     <form action="#" class="form-inline">
@@ -142,5 +146,19 @@ The value attribute of the text input was set to {{request.GET.q}}.
 {{request.GET.q}} retrieves the value for q from the GET parameters that are available in the URL, from the request that was just submitted.
 
 
+## Trello
 
+> Move card `As a user, I can search through the list of articles` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
+___
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added search bar"
+$ git push
+```
+___
 

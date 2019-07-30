@@ -99,3 +99,14 @@ We basically added this `pagination` `div` at the bottom of our code. This block
 3. Displays which page you're on and how many pages there are in total.
 
 Go and test it now on your browser.
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added pagination"
+$ git push
+```
+___

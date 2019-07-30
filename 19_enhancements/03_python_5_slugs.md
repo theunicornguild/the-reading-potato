@@ -148,3 +148,14 @@ def article_details(request, article_slug):
 ```
 
 Note: any view that is redirecting to the article details page will need to send the slug instead of the id so change those accordingly.
+
+### Git
+
+Create a new checkpoint
+
+```shell
+$ git add .
+$ git commit -m "added slugs"
+$ git push
+```
+___
