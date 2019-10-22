@@ -8,7 +8,7 @@ Let's go through everything we've done in this chapter.
 Make sure your code is working and that when you click on an article it takes you to the details page. If it's not working debug your code. If you get an error, try to read it to find out what the problem is and if you still can't find out what that problem is try and google. This will help improve your debugging skills so always try to find the solution on your own before asking for help.
 
 
-If you go it to work, move your trello card and push your code.
+If you got it to work, move your trello card and push your code.
 
 ___
 ## Trello

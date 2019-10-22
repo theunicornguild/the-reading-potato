@@ -26,18 +26,4 @@ In `main/templates/articles_list.html`, we'll specify that when the title is cli
 </body>
 ```
 
-___
-## Trello
-> Move card `As a user, I can see an articles details` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
-___
 
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "finished article details functionality"
-$ git push
-```
-___

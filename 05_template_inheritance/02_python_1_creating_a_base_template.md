@@ -1,5 +1,3 @@
-`template inheritance` is a way for us to decrease redundant code. we'll be doing that by creating a template with the things that are in common with all the pages and remove these redundancies from all the templates and instead make them `inherit` the code from the base template.
-
 Let's start by creating a new template which will have everything the pages have in common. If you take a look at all the templates that we wrote, you'll find out that the below was written in all of them.
 
 `main/templates/base.html`
@@ -42,15 +40,3 @@ These lines can be deleted from all the `templates` and inherit them from `base.
 You can have as many blocks as you want in the base file and all you have to do in the templates is extend the base file and fill those blocks.
 
 Take the time to extend the base file in all our templates and remove all the redundant code. Now, if you write anything in the `base.html` template, it will appear in all the pages that extend it.
-
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "added a base file for all pages"
-$ git push
-```
-___
