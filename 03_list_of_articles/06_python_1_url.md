@@ -37,19 +37,3 @@ If you go to this url `http://127.0.0.1:8000/articles/`, you should see your tem
 Let's try and explain what happened above in more detail. First, we imported the `views.py` file from the app `main`. Second, we created our path, we specified the url to be `articles/` and this url should call the `articles_list` view from the `views.py` file. Finally, the name attribute is just any name that you can give the path and you'll understand where the name comes in use later.
 
 Now take some time to play around with the template, try to change the design, change the colours, choose the information you want to display and see how these changes reflect on your page.
-
-
-## Trello
-> Move card `As a user, I can see the list of articles` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
-___
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "finished articles list functionality"
-$ git push
-```
-___
