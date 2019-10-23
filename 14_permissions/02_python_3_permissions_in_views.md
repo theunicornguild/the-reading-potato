@@ -1,20 +1,6 @@
-We need to start differentiating between a logged in user, an admin or an anonymous user (not logged in) because some pages require the user to be logged in. Another example is the navbar, if the user is logged in, they should see the logout link. On the other hand, if they're not, they should only see the login and register links.
-
-Basically, a user is either *not* logged in (`anonymous`), logged in (`authenticated`), or an admin (`staff`).
-
-We can check those permissions in both the `templates` and the `views`. 
-
-Let's go over our views and figure out what permissions we want to give each `view`.
- * `articles_list`: Anyone should be able to access it.
- * `article_details`: Anyone should be able to access it.
- * `create_article`: Only `authenticated` users should access it, since the logged in user is added as the author.
- * `my_articles_list`: Only `authenticated` users should access it, since only a logged in user has articles.
- * `register`: Only `anonymous` users can access it. it wouldn't make sense to let a logged in user register.
- * `login_view`: Only `anonymous` users can access it. because why would a logged in user want to login.
- * `logout_view`: Only `authenticated` users should access it. there is no need to explain this one.
+Before we start with adding permissions we need to decide what happens what happens if a user that shouldn't access a `view` accesses it. 
 
 
-Now we need to decide, what happens if a user that shouldn't access a `view` accesses it. 
 Let's say an `anonymous` user has the url to the `create-article` page, and he opens it in his browser. The page will open unless we do something about it because we're a silent guardian, a watchful protector, a Dark Knight.
 
 ![batman](https://media.giphy.com/media/6gDSyjaOPwZ4A/giphy.gif)
