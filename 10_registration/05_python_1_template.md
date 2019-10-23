@@ -20,19 +20,3 @@ Create a folder called `templates` in the `authentication` app.
 ```
 
 The only difference in this template from the `article_create.html` is the `action` url.
-
-
-## Trello
-> Move card `As a user, I can register with a username, email, first and last name, and password` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
-___
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "finished registration functionality"
-$ git push
-```
-___

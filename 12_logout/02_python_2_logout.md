@@ -1,9 +1,3 @@
-
-## Trello
-> Move card `As a logged in user, I can logout` from the `Backlog` to the `Doing` list.
-___
-
-
 We can register and login, But we still can't logout. For each functionality, we always had a `view`, `template`, and a `url`. 
 
 The `view` was for doing the actual action like the login in, creating the user for registrarion or retrieving data from the database. 
@@ -49,22 +43,3 @@ urlpatterns = [
     path('logout/', auth_views.logout_view, name="logout"),
 ]
 ```
-
-___
-## Trello
-
-Now how cool is that, you moved the card from `doing` to `done` in just one page
-
-> Move card `As a logged in user, I can logout` from the `Doing` to the `Review` list if someone will needs to review it, otherwise move it to `Done`.
-___
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "finished logout functionality"
-$ git push
-```
-___
