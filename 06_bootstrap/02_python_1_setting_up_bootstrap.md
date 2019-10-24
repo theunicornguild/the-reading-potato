@@ -1,4 +1,6 @@
 It's about time that our website starts looking more representable. We'll be using bootsrap to help us with styling.
+
+
 Setting up bootstrap to use is very easy. They provide CDNs for their CSS and JS files.
 
 What is a CDN?
@@ -30,15 +32,3 @@ Let's see how that's done.
 ```
 
 After setting up bootstrap, you can now start styling your templates. However, keep in mind that bootstrap is set up in the `base.html` only. Therefore, only templates that are inheriting the `base.html` template have bootstrap.
-
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "designed all pages"
-$ git push
-```
-___
