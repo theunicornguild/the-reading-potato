@@ -1,5 +1,3 @@
-We're finally in the interesting part. This is where we'll start with allowing other users to contribute to the articles. The author will see those contributions and what changes were made to the article and then decide whether they want to accept or decline these changes.
-
 We need to start thinking how we can keep track of what contributions were made by a user and how the author can see those contributions while keeping in mind that the actual article is not chnaged until the author accepts the changes suggested in the contribution.
 
 This means this change is saved in the database. If we're saving something in the database, that means we'll be needing a `model`. 

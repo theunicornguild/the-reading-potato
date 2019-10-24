@@ -1,13 +1,5 @@
-`reading_potato/urls.py`
-```python
-...
-urlpatterns = [
-    ...
-    path('my-contributions/', views.my_contributions_list, name="my-contributions-list"),
-]
-```
+This was a very straight forward page. All the work was in the template. Make sure that it's working properly and the correct information is showing. If all is good, move the card and push the code.
 
-Note: You can now add a link to `my-contributions-list` page in the navbar.
 
 ## Trello
 

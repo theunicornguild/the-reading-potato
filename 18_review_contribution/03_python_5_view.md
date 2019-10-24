@@ -1,7 +1,3 @@
-## Trello
-> Move card `As a logged in user, I can review changes/contributions made to my articles` from the `Backlog` to the `Doing` list.
-___
-
 `main/views.py`
 ```python
 ...

@@ -1,13 +1,5 @@
-`reading_potato/urls.py`
-```python
-...
-urlpatterns = [
-    ...
-    path('contributions/', views.contributions_list, name="contributions-list"),
-]
-```
+So far, you should be able to contribute to articles. See who contributed to you articles and see contributions that you made to other people's articles. Go through this whole cycle, make sure everything is working as expected. If all is well, move the card and push the code so we can move the interesting part.
 
-Note: You can now add a link to `contributions-list` page in the navbar.
 
 ## Trello
 

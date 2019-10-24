@@ -26,13 +26,3 @@ Next, let's make the button only visible to the author
 ...
 ````
 
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "added permissions"
-$ git push
-```
-___
