@@ -1,5 +1,3 @@
-Now that our website is expanding, we need a better way to navigate through the pages rather than having to write the url for each page. So, we need to create a `navbar` which will have a link for all the pages that our website provides.
-
 The navbar will be present in all pages. But, it wouldn't make sense to write the code for the navbar in every page. So, instead we'll only write it once in one place and that place is......* thinking time *
 
 ![dancing potato](https://media1.tenor.com/images/61497871ab091f01703a3f1a624fb3c4/tenor.gif?itemid=11684043)
@@ -63,15 +61,3 @@ We need to make a few changes the `navbar` to make it relevant to our website. W
 ```
 
 It's up to you to decide what you want to be shown on the navbar.
-
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "added navabr to base.html"
-$ git push
-```
-___
