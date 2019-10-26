@@ -14,4 +14,3 @@ $ git add .
 $ git commit -m "finished registration functionality"
 $ git push
 ```
-___

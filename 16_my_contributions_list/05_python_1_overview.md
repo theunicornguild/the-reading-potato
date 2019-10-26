@@ -15,4 +15,4 @@ $ git add .
 $ git commit -m "finished my contributions list functionality"
 $ git push
 ```
-___
+

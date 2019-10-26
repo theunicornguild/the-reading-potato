@@ -9,4 +9,3 @@ $ git add .
 $ git commit -m "added a base file for all pages"
 $ git push
 ```
-___

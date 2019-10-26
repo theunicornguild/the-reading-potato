@@ -1,6 +1,3 @@
-
-###### view
-
 `main/views.py`
 ```python
 def my_articles_list(request):

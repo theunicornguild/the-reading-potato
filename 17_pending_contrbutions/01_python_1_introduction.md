@@ -4,4 +4,3 @@ If you take a look at this page of the live demo `http://thereadingpotato.codeun
 
 ## Trello
 > Move card `As a logged in user, I can see a list of my articles that people contributed in and need my review` from the `Backlog` to the `Doing` list.
-___

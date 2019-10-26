@@ -16,4 +16,4 @@ Since we'll be starting with the review page, you can start by moving that cart 
 
 ## Trello
 > Move card `As a logged in user, I can review changes/contributions made to my articles` from the `Backlog` to the `Doing` list.
-___
+

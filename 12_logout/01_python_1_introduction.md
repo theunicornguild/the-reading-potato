@@ -3,5 +3,4 @@ So far, we've done login and registration and you can't have those without logou
 
 ## Trello
 > Move card `As a logged in user, I can logout` from the `Backlog` to the `Doing` list.
-___
 

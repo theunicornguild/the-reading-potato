@@ -158,4 +158,3 @@ $ git add .
 $ git commit -m "added slugs"
 $ git push
 ```
-___

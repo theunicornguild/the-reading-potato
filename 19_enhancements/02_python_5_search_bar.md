@@ -160,5 +160,3 @@ $ git add .
 $ git commit -m "added search bar"
 $ git push
 ```
-___
-

@@ -15,4 +15,3 @@ $ git add .
 $ git commit -m "finished logout functionality"
 $ git push
 ```
-___

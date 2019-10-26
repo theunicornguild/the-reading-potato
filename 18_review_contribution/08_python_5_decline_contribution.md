@@ -55,4 +55,3 @@ $ git add .
 $ git commit -m "finished accepting and declining contribution functionality"
 $ git push
 ```
-___

@@ -20,4 +20,3 @@ $ git add .
 $ git commit -m "finished edit an article functionality"
 $ git push
 ```
-___

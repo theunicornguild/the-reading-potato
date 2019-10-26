@@ -25,4 +25,3 @@ $ git add .
 $ git commit -m "finished articles list functionality"
 $ git push
 ```
-___

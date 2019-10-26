@@ -86,4 +86,4 @@ $ git add .
 $ git commit -m "displaying the contributors in the articles details page"
 $ git push
 ```
-___
+

@@ -3,4 +3,3 @@ In this chapter we'll be learning how to do the login page. This'll be more than
 
 ## Trello
 > Move card `As a user, I can login using my username and password` from the `Backlog` to the `Doing` list.
-___

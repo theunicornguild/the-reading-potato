@@ -13,4 +13,3 @@ $ git add .
 $ git commit -m "added permissions"
 $ git push
 ```
-___

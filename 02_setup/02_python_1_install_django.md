@@ -119,5 +119,3 @@ $ git add .
 $ git commit -m "new project"
 $ git push -u origin master
 ```
-
-___

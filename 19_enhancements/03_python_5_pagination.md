@@ -109,4 +109,3 @@ $ git add .
 $ git commit -m "added pagination"
 $ git push
 ```
-___

@@ -23,4 +23,4 @@ $ git add .
 $ git commit -m "finished contributing functionality"
 $ git push
 ```
-___
+

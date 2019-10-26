@@ -23,4 +23,3 @@ $ git add .
 $ git commit -m "finished creating an article functionality"
 $ git push
 ```
-___
