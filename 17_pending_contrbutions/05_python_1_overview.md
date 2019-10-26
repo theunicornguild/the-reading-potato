@@ -15,4 +15,3 @@ $ git add .
 $ git commit -m "finished list contributions that are awaiting user's approval functionality"
 $ git push
 ```
-___

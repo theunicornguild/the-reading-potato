@@ -82,14 +82,3 @@ Make sure you virtual environment is activated and that you're in your project d
 (env) $ python manage.py makemigrations
 (env) $ python manage.py migrate
 ```
-
-### Git
-
-Create a new checkpoint
-
-```shell
-$ git add .
-$ git commit -m "added the Contribution and Change models"
-$ git push
-```
-___

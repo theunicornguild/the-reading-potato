@@ -6,4 +6,3 @@ Go to the live demo and take a look at the registration page. If you want a chal
 
 ## Trello
 > Move card `As a user, I can register with a username, email, first and last name, and password` from the `Backlog` to the `Doing` list.
-___

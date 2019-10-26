@@ -3,4 +3,3 @@ In this chapter we'll be creating the edit page. In this page, the users should 
 
 ## Trello
 > Move card `As a logged in user, I can edit my article's title and content` from the `Backlog` to the `Doing` list.
-___

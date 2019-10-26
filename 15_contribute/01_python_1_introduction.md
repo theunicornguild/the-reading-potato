@@ -4,4 +4,4 @@ In this chapter, we'll do the actual action of contributing. Where a user can se
 
 ## Trello
 > Move card `As a logged in user, I can contribute to any article's content and wait for approval` from the `Backlog` to the `Doing` list.
-___
+

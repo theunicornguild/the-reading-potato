@@ -15,4 +15,3 @@ $ git add .
 $ git commit -m "finished my articles list functionality"
 $ git push
 ```
-___

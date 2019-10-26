@@ -6,4 +6,3 @@ You'll find the page in `http://thereadingpotato.codeunicorn.io/my-articles/` in
 
 ## Trello
 > Move card `As a logged in user, I can see a list of my articles` from the `Backlog` to the `Doing` list.
-___

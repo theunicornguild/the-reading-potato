@@ -10,7 +10,7 @@ Make sure your code is working and that when you click on an article it takes yo
 
 If you got it to work, move your trello card and push your code.
 
-___
+
 ## Trello
 > Move card `As a user, I can see an articles details` from the `Doing` to the `Review` list if someone needs to review it, otherwise move it to `Done`.
 ___
@@ -24,4 +24,3 @@ $ git add .
 $ git commit -m "finished article details functionality"
 $ git push
 ```
-___

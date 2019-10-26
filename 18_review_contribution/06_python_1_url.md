@@ -21,4 +21,3 @@ $ git add .
 $ git commit -m "finished review contribution functionality"
 $ git push
 ```
-___

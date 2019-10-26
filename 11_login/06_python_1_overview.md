@@ -23,4 +23,3 @@ $ git add .
 $ git commit -m "finished login functionality"
 $ git push
 ```
-___

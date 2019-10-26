@@ -4,4 +4,3 @@ Go to this page in the live demo http://thereadingpotato.codeunicorn.io/create/ 
 
 ## Trello
 > Move card `As a logged in user, I can add a new article` from the `Backlog` to the `Doing` list.
-___
